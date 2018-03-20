@@ -11,5 +11,8 @@ apt-get update
 
 
 # add datalad
+apt-get -y install datalad
 
-apt-get -y datalad
+# install dependencies (cmake)
+apt-get -y install cmake pkg-config
+
