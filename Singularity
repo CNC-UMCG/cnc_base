@@ -17,13 +17,13 @@ apt-get update
 
 
 # add datalad
-apt-get -y install datalad
+apt-get install -y datalad
 
 # install dependencies (cmake)
-apt-get -y install cmake pkg-config
+apt-get install -y cmake pkg-config
 
 # install dcm2niix
-apt-get -y install dcm2niix
+apt-get install -y dcm2niix
 
 # install icommands
-apt-get -y install irods-icommands
+apt-get install -y irods-icommands
