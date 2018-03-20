@@ -14,7 +14,7 @@ apt-key adv --recv-keys --keyserver hkp://pool.sks-keyservers.net:80 0xA5D32F012
 
 # add irods icommands 
 wget -qO - https://packages.irods.org/irods-signing-key.asc | apt-key add -
-echo "deb [arch=amd64] https://packages.irods.org/apt/xenial main" | tee /etc/apt/sources.list.d/renci-irods.list
+echo "deb [arch=amd64] https://packages.irods.org/apt/ xenial main" | tee /etc/apt/sources.list.d/renci-irods.list
 
 
 apt-get update
