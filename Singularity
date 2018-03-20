@@ -1,6 +1,9 @@
 Bootstrap: docker
 From: ubuntu:latest
 
+%environment
+SINGULARITY_SHELL="/bin/bash"
+
 %post
 apt-get update
 apt-get install -y wget
