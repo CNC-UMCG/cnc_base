@@ -16,3 +16,5 @@ apt-get -y install datalad
 # install dependencies (cmake)
 apt-get -y install cmake pkg-config
 
+# install dcm2niix
+apt-get -y install dcm2niix
