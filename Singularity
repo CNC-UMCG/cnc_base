@@ -6,7 +6,7 @@ SINGULARITY_SHELL="/bin/bash"
 
 %post
 apt-get update
-apt-get install -y wget
+apt-get install -y wget lsb_release
 
 # add neurodebian repository
 wget -O- http://neuro.debian.net/lists/xenial.de-md.libre | tee /etc/apt/sources.list.d/neurodebian.sources.list
