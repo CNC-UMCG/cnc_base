@@ -2,7 +2,7 @@ Bootstrap: docker
 From: ubuntu:latest
 
 %post
-
+apt-get update
 apt-get install -y wget
 
 # add neurodebian repository
