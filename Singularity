@@ -5,10 +5,10 @@ From: ubuntu:latest
 SINGULARITY_SHELL="/bin/bash"
 
 %setup
-mkdir -p .irods
+mkdir -p /root/.irods
 
 %files
-irods_environment.json .irods/
+irods_environment.json /root/.irods/
 
 %post
 apt-get update
