@@ -4,7 +4,14 @@ From: ubuntu:latest
 %environment
 SINGULARITY_SHELL="/bin/bash"
 
+%setup
+mkdir $SINGULARITY_ROOTFS/.irods
+
+%files
+irods_environment.json $SINGULARITY_ROOTFS/.irods/
 %post
+mkdir $SINGULARITY_ROOTFS/.irods
+
 apt-get update
 apt-get install -y wget 
 apt-get install -y apt-transport-https
@@ -32,3 +39,4 @@ apt-get install -y dcm2niix
 
 # install icommands
 apt-get install -y irods-icommands
+
