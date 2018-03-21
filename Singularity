@@ -1,14 +1,17 @@
 Bootstrap: docker
-From: ubuntu:latest
+From: ubuntu:16.04
 
 %environment
 SINGULARITY_SHELL="/bin/bash"
+PATH=$PATH:/usr/bin/cnc
 
 %setup
 mkdir -p /root/.irods
+mkdir -p /usr/bin/cnc
 
 %files
 irods_environment.json /root/.irods/
+scripts/* /usr/bin/cnc
 
 %post
 apt-get update
