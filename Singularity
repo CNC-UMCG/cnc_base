@@ -9,6 +9,7 @@ mkdir $SINGULARITY_ROOTFS/.irods
 
 %files
 irods_environment.json $SINGULARITY_ROOTFS/.irods/
+
 %post
 mkdir $SINGULARITY_ROOTFS/.irods
 
