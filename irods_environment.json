@@ -1,0 +1,31 @@
+
+
+{
+
+                "irods_client_server_negotiation": "request_server_negotiation",
+
+                "irods_client_server_policy": "CS_NEG_REQUIRE",
+
+                "irods_authentication_scheme": "pam",
+
+                "irods_encryption_key_size": 32,
+
+                "irods_encryption_algorithm": "AES-256-CBC",
+
+                "irods_user_name": "f114804",
+
+                "irods_encryption_salt_size": 8,
+
+                "irods_encryption_num_hash_rounds": 16,
+
+                "irods_default_hash_scheme": "SHA256",
+
+                "irods_host": "irods0.service.rug.nl",
+
+                "irods_match_hash_policy": "compatible",
+
+                "irods_port": 1247,
+
+                "irods_zone_name": "irods0Zone"
+
+        }
