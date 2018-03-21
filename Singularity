@@ -11,8 +11,6 @@ mkdir -p .irods
 irods_environment.json .irods/
 
 %post
-mkdir $SINGULARITY_ROOTFS/.irods
-
 apt-get update
 apt-get install -y wget 
 apt-get install -y apt-transport-https
