@@ -5,14 +5,12 @@ From: ubuntu:latest
 SINGULARITY_SHELL="/bin/bash"
 
 %setup
-mkdir $SINGULARITY_ROOTFS/.irods
+mkdir -p /root/.irods
 
 %files
-irods_environment.json $SINGULARITY_ROOTFS/.irods/
+irods_environment.json /root/.irods/
 
 %post
-mkdir $SINGULARITY_ROOTFS/.irods
-
 apt-get update
 apt-get install -y wget 
 apt-get install -y apt-transport-https
