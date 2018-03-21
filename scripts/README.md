@@ -1,0 +1,1 @@
+# scripts directory for base image of CNC
