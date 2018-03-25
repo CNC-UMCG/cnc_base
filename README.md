@@ -1,7 +1,8 @@
 # Singularity image catalogue for CNC HPC pipeline #
-_cnc_base_
-
 ---
+
+|Author| Jan-Bernard Marsman, PhD |
+|      | _Cognitive Neuroscience Center<br> department of Neuroscience<br>University Medical Center Groningen<br>The Netherlands|
 
 This image is meant for use on [Peregrine HPC](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster), RuG 
 
