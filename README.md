@@ -17,7 +17,9 @@ Currently, I am working on a managed pipeline system with the following specific
 
 | Name | Description |
 --- | --- 
-| **cnc_base** | ubuntu 16.04 image with dcm2niix and datalab. Additionally, our conversion script using dcm2niix with additional organization of files |
+| **cnc_base** | ubuntu 16.04 image with dcm2niix and datalab. 
+
+Additionally, our conversion script using dcm2niix with additional organization of files |
 | **[cnc_spm](https://github.com/CNC-UMCG/cnc_spm)** | cnc_base + standalone SPM version for SPM pipelines |
 | **[cnc_fsl](https://github.com/CNC-UMCG/cnc_fsl)** | cnc_base + FSL version ... |
 | **[cnc_spm-fsl](https://github.com/CNC-UMCG/cnc_spm-fsl)** | cnc_spm + FSL version ...? |
