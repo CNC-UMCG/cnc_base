@@ -1,6 +1,7 @@
-# cnc_base #
+# Singularity image catalogue for CNC HPC pipeline #
+_cnc_base_
 
-*Base image for CNC HPC pipeline*
+---
 
 This image is meant for use on [Peregrine HPC](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster), RuG 
 
@@ -12,7 +13,7 @@ Currently, I am working on a managed pipeline system with the following specific
 - Pipeline output is stored on [iRODS](https://irods.org)
 - Logfiles will be stored in electronic elabjournal via REST ([BIO-itech](https://www.bio-itech.nl/en/products/eln/))
 
-# Planned catalogue #
+## Planned catalogue ##
 
 * **cnc_base** 
 
