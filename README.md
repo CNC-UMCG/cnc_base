@@ -14,7 +14,7 @@ Currently, I am working on a managed pipeline system with the following specific
 
 # Planned catalogue #
 
-* cnc_base*) ubuntu 16.04 image with dcm2niix and datalab. Additionally, our conversion script
+* # cnc_base # ubuntu 16.04 image with dcm2niix and datalab. Additionally, our conversion script
 using dcm2niix with additional organization of files
 
 * #cnc_spm# cnc_base + standalone SPM version for SPM pipelines
