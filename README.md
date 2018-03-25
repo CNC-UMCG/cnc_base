@@ -18,12 +18,12 @@ Currently, I am working on a managed pipeline system with the following specific
 | Name | Description |
 --- | --- 
 | **cnc_base** | ubuntu 16.04 image with dcm2niix and datalab. Additionally, our conversion script using dcm2niix with additional organization of files |
-| **cnc_spm** | cnc_base + standalone SPM version for SPM pipelines |
-| **cnc_fsl** | cnc_base + FSL version ... |
-| **cnc_spm-fsl** | cnc_spm + FSL version ...? |
-| **cnc_meica** | cnc_base + AFNI comprising meica (conversion of multi-echo data) |
-| **cnc_freesurfer** | cnc_base + freesurfer version:?? |
-| **cnc_qmri** | cnc_spm-fsl + ANTS + ... |
+| **[cnc_spm](https://github.com/CNC-UMCG/cnc_spm)** | cnc_base + standalone SPM version for SPM pipelines |
+| **[cnc_fsl](https://github.com/CNC-UMCG/cnc_fsl)** | cnc_base + FSL version ... |
+| **[cnc_spm-fsl](https://github.com/CNC-UMCG/cnc_spm-fsl)** | cnc_spm + FSL version ...? |
+| **[cnc_meica](https://github.com/CNC-UMCG/cnc_meica)** | cnc_base + AFNI comprising meica (conversion of multi-echo data) |
+| **[cnc_freesurfer](https://github.com/CNC-UMCG/cnc_freesurfer)** | cnc_base + freesurfer version:?? |
+| **[cnc_qmri](https://github.com/CNC-UMCG/cnc_qmri)** | cnc_spm-fsl + ANTS + ... |
 
 --- 
 
