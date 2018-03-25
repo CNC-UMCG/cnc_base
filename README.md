@@ -1,9 +1,11 @@
 # Singularity image catalogue for CNC HPC pipeline #
 ---
 
-| Author | Jan-Bernard Marsman, PhD <br> _Cognitive Neuroscience Center<br> department of Neuroscience<br>University Medical Center Groningen<br>The Netherlands |
 
 This image is meant for use on [Peregrine HPC](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster), RuG 
+
+| Author | Jan-Bernard Marsman, PhD <br> _Cognitive Neuroscience Center<br> department of Neuroscience<br>University Medical Center Groningen<br>The Netherlands |
+---|---
 
 Currently, I am working on a managed pipeline system with the following specifications:
 - Source system: [XNAT 1.7](https://www.xnat.org)
@@ -28,14 +30,5 @@ Currently, I am working on a managed pipeline system with the following specific
 --- 
 
 If you are interested please contact me.
-
-Jan-Bernard Marsman, PhD
-
-Cognitive Neuroscience Center
-
-Department of Neuroscience
-
-University Medical Center Groningen
-
 j.b.c.marsman [at] umcg.nl
 
