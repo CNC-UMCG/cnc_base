@@ -1,6 +1,17 @@
 Bootstrap: docker
 From: ubuntu:16.04
 
+# Maintained by:
+
+# Jan-Bernard Marsman, PhD
+# Cognitive Neuroscience Center
+# Department of Neuroscience
+# University Medical Center Groningen
+#
+# Contact: j.b.c.marsman [at] umcg.nl
+#
+# March 2018 :version 1.0
+
 %environment
     SINGULARITY_SHELL="/bin/bash"
     PATH=$PATH:/usr/bin/cnc
