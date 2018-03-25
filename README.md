@@ -4,8 +4,8 @@
 
 This image is meant for use on [Peregrine HPC](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster), RuG 
 
-_Author_ : **Jan-Bernard Marsman, PhD** ^<br> [_Cognitive Neuroscience Center_](http://neuroscience.umcg.nl/en/facilities/neuroimaging-center/)<br> department of Neuroscience<br>University Medical Center Groningen<br>The Netherlands^
-
+|_Author_ | **Jan-Bernard Marsman, PhD** <br> [_Cognitive Neuroscience Center_](http://neuroscience.umcg.nl/en/facilities/neuroimaging-center/)<br> department of Neuroscience<br>University Medical Center Groningen<br>The Netherlands
+---|:---
 
 Currently, I am working on a managed pipeline system with the following specifications:
 - Source system: [XNAT 1.7](https://www.xnat.org)
