@@ -51,3 +51,5 @@ From: ubuntu:16.04
     # install icommands
     apt-get install -y irods-icommands
 
+%runscript
+    exec /usr/bin/cnc/
