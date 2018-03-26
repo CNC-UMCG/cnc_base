@@ -20,9 +20,9 @@ From: ubuntu:16.04
     mkdir -p /root/.irods
 
 %files
-    irods_environment.json /root/.irods/
     scripts/* /usr/bin/
-
+    #irods_environment.json /root/.irods/
+    
 %post
     apt-get update
     apt-get install -y wget 
