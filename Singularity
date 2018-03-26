@@ -18,11 +18,11 @@ From: ubuntu:16.04
 
 %setup
     mkdir -p /root/.irods
-    mkdir -p /root/cnc
+    mkdir -p /usr/bin/cnc
 
 %files
     irods_environment.json /root/.irods/
-    scripts/* /root/cnc
+    scripts/* /usr/bin/cnc/
 
 %post
     apt-get update
