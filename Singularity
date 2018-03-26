@@ -51,4 +51,4 @@ From: ubuntu:16.04
     apt-get install -y irods-icommands
 
 %runscript
-    exec /usr/bin/cnc/cnc_convert.sh "$@" 
+    exec /usr/bin/cnc_convert.sh "$@" 
