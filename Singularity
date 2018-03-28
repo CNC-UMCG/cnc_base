@@ -10,7 +10,7 @@ From: ubuntu:16.04
 #
 # Contact: j.b.c.marsman [at] umcg.nl
 #
-# March 2018 :version 1.0
+# March 2018 :version 1.1
 
 %environment
     SINGULARITY_SHELL="/bin/bash"
