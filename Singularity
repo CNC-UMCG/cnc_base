@@ -17,11 +17,11 @@ From: ubuntu:16.04
     PATH=$PATH:/usr/bin/cnc
 
 %setup
-    mkdir -p /root/.irods
+    mkdir -p  $SINGULARITY_ROOTFS/root/.irods
     mkdir $SINGULARITY_ROOTFS/usr/bin/cnc
 
     # bind point for data directory
-    mkdir /data
+    mkdir $SINGULARITY_ROOTFS/data
 
 %files
     scripts/* /usr/bin/cnc
