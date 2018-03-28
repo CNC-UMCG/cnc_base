@@ -24,6 +24,10 @@ From: ubuntu:16.04
     #irods_environment.json /root/.irods/
     
 %post
+    # make imported scripts executable
+    chmod 755 /usr/bin/cnc_convert.sh
+    
+    
     apt-get update
     apt-get install -y wget 
     apt-get install -y apt-transport-https
