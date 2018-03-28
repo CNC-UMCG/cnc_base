@@ -20,6 +20,9 @@ From: ubuntu:16.04
     mkdir -p /root/.irods
     mkdir /usr/bin/cnc
 
+    # bind point for data directory
+    mkdir /data
+
 %files
     scripts/* /usr/bin/cnc
     #irods_environment.json /root/.irods/
