@@ -18,14 +18,15 @@ From: ubuntu:16.04
 
 %setup
     mkdir -p /root/.irods
+    mkdir /usr/bin/cnc
 
 %files
-    scripts/* /usr/bin/
+    scripts/* /usr/bin/cnc
     #irods_environment.json /root/.irods/
     
 %post
     # make imported scripts executable
-    chmod 755 /usr/bin/cnc_convert.sh
+    chmod 755 /usr/bin/cnc/*
     
     
     apt-get update
