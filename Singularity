@@ -18,7 +18,7 @@ From: ubuntu:16.04
 
 %setup
     mkdir -p /root/.irods
-    mkdir /usr/bin/cnc
+    mkdir $SINGULARITY_ROOTFS/usr/bin/cnc
 
     # bind point for data directory
     mkdir /data
