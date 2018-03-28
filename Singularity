@@ -10,20 +10,28 @@ From: ubuntu:16.04
 #
 # Contact: j.b.c.marsman [at] umcg.nl
 #
-# March 2018 :version 1.0
+# March 2018 :version 1.1
 
 %environment
     SINGULARITY_SHELL="/bin/bash"
     PATH=$PATH:/usr/bin/cnc
 
 %setup
-    mkdir -p /root/.irods
+    mkdir -p  $SINGULARITY_ROOTFS/root/.irods
+    mkdir $SINGULARITY_ROOTFS/usr/bin/cnc
+
+    # bind point for data directory
+    mkdir $SINGULARITY_ROOTFS/data
 
 %files
+    scripts/* /usr/bin/cnc
     #irods_environment.json /root/.irods/
-    scripts/* /usr/bin/
-
+    
 %post
+    # make imported scripts executable
+    chmod 755 /usr/bin/cnc/*
+    
+    
     apt-get update
     apt-get install -y wget 
     apt-get install -y apt-transport-https
@@ -51,4 +59,4 @@ From: ubuntu:16.04
     apt-get install -y irods-icommands
 
 %runscript
-    exec /usr/bin/cnc_convert.sh "$@" 
+    exec cnc_convert "$@" 
