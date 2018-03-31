@@ -200,7 +200,7 @@ convert_to_nii() {
 
 
     
-    rm -f $LOGDIR/.imadirs.txt
+    rm -f $LOGDIR/imadirs.txt
     rm -f $LOGDIR/conversion.*
     rm -f $LOGDIR/*.dcm2nii.log
     c=0
@@ -210,10 +210,10 @@ convert_to_nii() {
 	filedir=${i%/*}
 	filename=${i##*/}
 	  
-	echo ${i%/*} >> $LOGDIR/.imadirs.txt
+	echo ${i%/*} >> $LOGDIR/imadirs.txt
     done
 
-    unique_ima_files=( `cat $LOGDIR/.imadirs.txt | uniq` )
+    unique_ima_files=( `cat $LOGDIR/imadirs.txt | uniq` )
     echo -e "*) Scans found in the following directory :\n"
     for imaset in ${unique_ima_files[*]}
     do
@@ -252,10 +252,10 @@ organize()
     echo 
     report "*) Organizing data"
     
-    rm -f $LOGDIR/.timestamps.*
+    rm -f $LOGDIR/timestamps.*
     rm -f $LOGDIR/organizing.*
 
-    unique_ima_files=( `cat $LOGDIR/.imadirs.txt | uniq` )
+    unique_ima_files=( `cat $LOGDIR/imadirs.txt | uniq` )
 
     # first, create a small text file to order based on timestamp
     for imaset in ${unique_ima_files[*]}
@@ -268,14 +268,14 @@ organize()
     jsonfile=${outputfile%.nii}.json
         
         timestamp=$(read_json_param $jsonfile "AcquisitionTime")
-	    echo -e "$timestamp; $imaset" >> $LOGDIR/.timestamps.txt
+	    echo -e "$timestamp; $imaset" >> $LOGDIR/timestamps.txt
 	    fi
     done
     
-    sort -n -t ":" -k1 -k2 -k3 $LOGDIR/.timestamps.txt | uniq -w 16 | grep -v "_e3\|_e2" > $LOGDIR/.timestamps.sorted.txt 
+    sort -n -t ":" -k1 -k2 -k3 $LOGDIR/timestamps.txt | uniq -w 16 | grep -v "_e3\|_e2" > $LOGDIR/timestamps.sorted.txt 
 
     measurement=1    
-    for imaset in `cat $LOGDIR/.timestamps.sorted.txt | awk '{print $2}'`  ##${unique_ima_files[*]}
+    for imaset in `cat $LOGDIR/timestamps.sorted.txt | awk '{print $2}'`  ##${unique_ima_files[*]}
     do
 	OUTPUTFILECOUNTER=$( cat $LOGDIR/conversion.output | grep $imaset | grep "Convert" | grep "as" | awk "{print \$5}" | wc -l )
 	OUTPUTFILES=( $( cat $LOGDIR/conversion.output | grep $imaset | grep "Convert" | grep "as" | awk "{print \$5}" ) )
