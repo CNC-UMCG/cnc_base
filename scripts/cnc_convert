@@ -99,12 +99,12 @@ copy_data()
     #fi
 
 
-    cp -R --progress $INPUTDIR /tmp/
+    # cp -R --progress $INPUTDIR /tmp/
     
     # reset INPUTDIR
-    LASTFOLDER=${INPUTDIR##*/}
-    INPUTDIR="/tmp/$LASTFOLDER"
-    TMPDIR=$INPUTDIR
+    # LASTFOLDER=${INPUTDIR##*/}
+    # INPUTDIR="/tmp/$LASTFOLDER"
+    # TMPDIR=$INPUTDIR
         # locate the P-number
     
     for item in `echo $INPUTDIR | tr '/' '\n' `; do
