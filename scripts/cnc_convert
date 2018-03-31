@@ -99,7 +99,7 @@ copy_data()
     #fi
 
 
-    pv -R --progress $INPUTDIR /tmp/
+    cp -R --progress $INPUTDIR /tmp/
     
     # reset INPUTDIR
     LASTFOLDER=${INPUTDIR##*/}
