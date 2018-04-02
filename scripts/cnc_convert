@@ -229,7 +229,7 @@ convert_to_nii() {
     do
 	imafile=${imaset##*/}
 
-        dcm2niix -b y $imaset 2>> $LOGDIR/$imafile.dcm2nii.err 1>> $LOGDIR/conversion.output
+        result=`dcm2niix -b y $imaset 2>> $LOGDIR/$imafile.dcm2nii.err 1>> $LOGDIR/conversion.output`
 
 	echo "dcm2niix -b y $imaset > $LOGDIR/$imaset.dcmi2nii.log 2>> $LOGDIR/$imaset.dcm2nii.err" >> $LOGDIR/conversion.cmd
 	echo -e "\to) $imaset converted"
