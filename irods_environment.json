@@ -12,7 +12,7 @@
 
                 "irods_encryption_algorithm": "AES-256-CBC",
 
-                "irods_user_name": "f114804",
+                "irods_user_name": "",
 
                 "irods_encryption_salt_size": 8,
 
