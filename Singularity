@@ -37,8 +37,7 @@ From: ubuntu:16.04
     apt-get install -y apt-transport-https
     apt-get install -y progress
     apt-get install -y emacs
-    apt-get install -y epel-release
-    apt-get install -y Lmod
+     
     
     # add neurodebian repository
     wget -O- http://neuro.debian.net/lists/xenial.de-md.libre | tee /etc/apt/sources.list.d/neurodebian.sources.list
@@ -62,8 +61,7 @@ From: ubuntu:16.04
     # install icommands
     apt-get install -y irods-icommands
 
-    # load all software modules on HPC
-    module use /software/modules/all
+    mkdir /software
 
 %runscript
     exec cnc_convert "$@" 
