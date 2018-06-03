@@ -38,10 +38,7 @@ From: ubuntu:16.04
     apt-get install -y progress
     apt-get install -y emacs
     
-    apt-get install -y yum
-    
-    yum install -y epel-release
-    yum install -y Lmod
+    apt-get install -y lmod    
     
     # add neurodebian repository
     wget -O- http://neuro.debian.net/lists/xenial.de-md.libre | tee /etc/apt/sources.list.d/neurodebian.sources.list
