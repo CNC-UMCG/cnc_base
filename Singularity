@@ -49,6 +49,9 @@ From: ubuntu:16.04
     echo "deb [arch=amd64] https://packages.irods.org/apt/ xenial main" | tee /etc/apt/sources.list.d/renci-irods.list
 
     apt-get update
+    
+    # install afni
+    apt-get install -y afni
 
     # add datalad
     apt-get install -y datalad
