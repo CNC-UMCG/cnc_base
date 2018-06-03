@@ -38,7 +38,7 @@ From: ubuntu:16.04
     apt-get install -y progress
     apt-get install -y emacs
     
-    apt-get install -y lmod    
+    apt-get install -y environment-modules lmod
     
     # add neurodebian repository
     wget -O- http://neuro.debian.net/lists/xenial.de-md.libre | tee /etc/apt/sources.list.d/neurodebian.sources.list
