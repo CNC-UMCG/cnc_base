@@ -51,8 +51,9 @@ From: ubuntu:16.04
     apt-get update
     
     # install afni
-    apt-get install -y afni
-
+    wget https://afni.nimh.nih.gov/pub/dist/tgz/linux_ubuntu_16_64.tgz
+    tar xvzf linux_ubuntu_16_64.tgz -C /usr/share/
+    
     # add datalad
     apt-get install -y datalad
 
